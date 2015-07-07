@@ -24,9 +24,19 @@ body {
 	width: 100%;
 }
 .shape{
-	width: 30%;
+	width: 33.33%;
 	margin: 200px auto;
 	display: inline-table;
+	position: absolute;
+}
+#about{
+	left: 33.33%;
+}
+#contact{
+	left: 0;
+}
+#lessons{
+	left: 66.66%;
 }
 #about img{
 		max-width: 250px;
@@ -55,6 +65,7 @@ body {
 	.shape{
 		margin: 75px auto;
 		width: 100%;
+		position: static;
 	}
 
 }
