@@ -24,3 +24,4 @@ git test 5 - commit then push
 test 6 commit
 test 7 another commit
 test 8 
+test 9 and now push (after commit, but staging first)
