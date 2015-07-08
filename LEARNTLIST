@@ -1,0 +1,17 @@
+sublime2 plugins: Package Control, Advanced new file, sublime linter, git,
+
+you can @import CSS style sheets.
+../ means up-one in the file structure
+background attachment: fixed
+position: center
+semantically: content images should be in html not in css divs
+CSS tables/containers
+table-inline
+you can clip mask images into circles using css, other shapes more tricky.
+People disagree on when to use id and class selectors
+The C in CSS is quite important.
+Floats and parents are confusing.
+Git is useful. Learned init, add, commit, and push, but need practice.
+!! sudo is super useful for long terminal commands you fuck up.
+GitHub and Knowledeable Friends are the best <3
+flexbox looks cool but isnt that supported maybe, also position did what i wanted after a bit of understanding.
