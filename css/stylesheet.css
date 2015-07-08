@@ -29,24 +29,24 @@ body {
 	display: inline-table;
 	position: absolute;
 }
-#about{
+#circle{
 	left: 33.33%;
 }
-#contact{
+#square{
 	left: 0;
 }
-#lessons{
+#triangle{
 	left: 66.66%;
 }
-#about img{
+#circle img{
 		max-width: 250px;
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED FAM. */
     	border-radius: 100%;
 }
-#contact img{
+#square img{
 		max-width: 250px;
 }
-#lessons img{
+#triangle img{
 		max-width: 250px;
 }
 /*  below is unresponsive/bad practice. Look up media queries. 
