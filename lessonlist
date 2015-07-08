@@ -1,4 +1,4 @@
-sublime2 plugins: Package Control, Advanced new file, sublime linter.
+sublime2 plugins: Package Control, Advanced new file, sublime linter, git,
 
 you can @import CSS style sheets.
 ../ means up-one in the file structure
@@ -15,3 +15,6 @@ Git is useful.
 !! sudo is super useful for long terminal commands you fuck up.
 GitHub and Knowledeable Friends are the best <3
 flexbox looks cool but isnt that supported.
+
+Git Test 1
+
