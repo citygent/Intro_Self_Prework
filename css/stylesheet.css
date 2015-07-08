@@ -9,26 +9,21 @@ body {
 	text-align: center;
 	color: White;
 }
-/* Table but can't work out mediaQ
-.lander {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-	border-spacing: 40px;
-}
-.col {
-	display: table-cell;
-}
-*/
+
 #wrap{
-  	margin: 0 auto;
+  	margin: 0 auto; /*keeps things centered as screen grows above 1200px*/
  	max-width: 1200px;
  	position: relative;
 }
 .shape{
-	width: 33.3%;
-	margin: 200px auto;
+	width: 33.3%; 
+	margin: 200px auto; /* needs to be in .shape for media query to work see media comments*/
 	position: absolute;
+}
+.shape img{
+	width: 85%;
+	height: 85%;
+	max-width: 200px;
 }
 #circle{
 	left: 33.33%;
@@ -40,15 +35,8 @@ body {
 	left: 66.66%;
 }
 #circle img{
-	max-width: 200px;
-    /*border: 0px solid rgba(150,200,255,1); NOT NEEDED FAM. */
-    border-radius: 100%;
-}
-#square img{
-	max-width: 200px;
-}
-#triangle img{
-	max-width: 200px;
+    /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
+    border-radius: 100%; /*TO MAKE A CIRCLE FAM.*/
 }
 /*  below is unresponsive/bad practice. Look up media queries. 
 .about img{
@@ -63,10 +51,10 @@ body {
 	#wrap {
 		width: 100%;
 	}
-	.shape{
+	.shape{ /*Not sure why but a verticle margin in #wrap wouldn't work, keep in .shape class */
 		margin: 75px auto;
 		width: 100%;
-		position: static;
+		position: static; /*this returns the position of the elements to the html structure (circle first)*/
 
 	}
 }
