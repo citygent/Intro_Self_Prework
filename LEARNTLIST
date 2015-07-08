@@ -1,4 +1,5 @@
 sublime2 plugins: Package Control, Advanced new file, sublime linter, git,
+keyboard shortcuts: close window (⌘W), swtich tab(ctrltab), select line from caret(⌘shift+left/right)
 
 you can @import CSS style sheets.
 ../ means up-one in the file structure
@@ -15,3 +16,11 @@ Git is useful. Learned init, add, commit, and push, but need practice.
 !! sudo is super useful for long terminal commands you fuck up.
 GitHub and Knowledeable Friends are the best <3
 flexbox looks cool but isnt that supported maybe, also position did what i wanted after a bit of understanding.
+
+
+
+
+Things you mgiht want to do if time:
+	CSS clip the triangle image
+	if above successful, add rollover highlights to shapes?
+	
