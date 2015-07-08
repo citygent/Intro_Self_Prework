@@ -1,4 +1,4 @@
-body {
+html, body {
 	background-color: rgb(222,222,222);
 	background: url(../images/desk.jpg);
 	background-size: cover;
@@ -7,18 +7,23 @@ body {
 	background-position: center;
 	font-family: helvetica;
 	text-align: center;
-	color: White;
+	color: White;	
+	height: 100%;
 }
-
 #wrap{
+		/* border: solid blue;  remove me when you're done fam */
+		clear: both;
+		height: 100%; /* this seemingly does FA */
+
   	margin: 0 auto; /*keeps things centered as screen grows above 1200px*/
- 	max-width: 1200px;
+ 	max-width: 1080px;
  	position: relative;
 }
 .shape{
+		/*border: solid red;  remove me when you're done fam */
 	width: 33.3%; 
 	margin: 200px auto; /* needs to be in .shape for media query to work see media comments*/
-	position: absolute;
+	position: absolute; /* this coupled with left: ### is what changed the order of the shape divs for big screens*/
 }
 .shape img{
 	width: 85%;
@@ -38,6 +43,28 @@ body {
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
     border-radius: 100%; /*TO MAKE A CIRCLE FAM.*/
 }
+#face{
+			/*border: solid red;  remove me when you're done fam */
+
+}
+#face {
+	width: 30%;
+	float: left;
+}
+#face img{
+	width: 85%;
+	margin: 40px auto 20px;
+    border: 10px solid rgba(150,225,255,.5);
+    border-radius: 100%;
+    max-width: 250px;
+}
+#text{
+	text-align: left;
+	background-color: rgba(150,225,255,.5);
+	margin: 140px auto;
+	padding: 5px 20px;
+}
+
 /*  below is unresponsive/bad practice. Look up media queries. 
 .about img{
 	width: 200px;
