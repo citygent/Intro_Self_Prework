@@ -1,14 +1,12 @@
 # uwotm8
 
-3 divs in a row, when small screen media Q changes to coloumn and order of divs changes.
+Simple website to introduce self to GA.
 
-eg: 
-Big Screen:
-SQUARE | CIRCLE | TRIANGLE
+Brief requirements:
+	Two-Pages (or more I guess),
+	HTML Content, 
+	CSS Styling,
+	Photo of me,
+	Contact Section,
+	Containable within folder.
 
-Small Screen:
-CIRCLE
------
-SQUARE
------
-TRIANGLE
