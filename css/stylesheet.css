@@ -8,19 +8,15 @@ html, body {
 	font-family: helvetica;
 	text-align: center;
 	color: White;	
-	height: 100%;
+	height: 100%; /*needed for floats*/
 }
 #wrap{
-		/* border: solid blue;  remove me when you're done fam */
-		clear: both;
-		height: 100%; /* this seemingly does FA */
-
+	height: 100%; /* this and above for floats */
   	margin: 0 auto; /*keeps things centered as screen grows above 1200px*/
  	max-width: 1080px;
  	position: relative;
 }
 .shape{
-		/*border: solid red;  remove me when you're done fam */
 	width: 33.3%; 
 	margin: 200px auto; /* needs to be in .shape for media query to work see media comments*/
 	position: absolute; /* this coupled with left: ### is what changed the order of the shape divs for big screens*/
@@ -43,26 +39,25 @@ html, body {
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
     border-radius: 100%; /*TO MAKE A CIRCLE FAM.*/
 }
-#face{
-			/*border: solid red;  remove me when you're done fam */
 
-}
 #face {
-	width: 30%;
-	float: left;
+	margin: 100px auto 0px;
+	position: absolute;
+	left: 10%;
 }
 #face img{
-	width: 85%;
-	margin: 40px auto 20px;
     border: 10px solid rgba(150,225,255,.5);
     border-radius: 100%;
     max-width: 250px;
 }
 #text{
+		position: absolute;
+		left: 45%;
 	text-align: left;
 	background-color: rgba(150,225,255,.5);
-	margin: 140px auto;
+	margin: 100px auto;
 	padding: 5px 20px;
+	max-width: 40%;
 }
 
 /*  below is unresponsive/bad practice. Look up media queries. 
@@ -78,10 +73,14 @@ html, body {
 	#wrap {
 		width: 100%;
 	}
-	.shape{ /*Not sure why but a verticle margin in #wrap wouldn't work, keep in .shape class */
+	.shape{ /*Not sure why but a verticle margin in #wrap wouldn't work, see above, keep in .shape class */
 		margin: 75px auto;
 		width: 100%;
 		position: static; /*this returns the position of the elements to the html structure (circle first)*/
 
+	}
+	#face, #text {
+		position: static;
+		max-width: 80%;
 	}
 }
