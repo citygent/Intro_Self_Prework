@@ -1,14 +1,35 @@
 html, body {
-	background-color: rgb(222,222,222);
-	background: url(../images/desk.jpg);
+	background: url(../images/deskb.jpg);
+	background-color: rgb(200,200,200);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	font-family: helvetica;
 	text-align: center;
-	color: White;	
+	color: white;	
 	height: 100%; /*needed for floats*/
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+#nav {
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 40px;
+	top: 0px;
+	left: 0px;
+}
+#homekey{
+	float: left;
+    padding: 5px 15px;
+}
+#navshapes {
+	float: right;
+    padding: 5px 20px;
 }
 #wrap{
 	height: 100%; /* this and above for floats, but fuck floats seriously */
@@ -24,7 +45,7 @@ html, body {
 .shape img{
 	width: 85%;
 	height: 85%;
-	max-width: 200px;
+	max-width: 250px;
 }
 #circle{
 	left: 33.33%;
@@ -39,47 +60,81 @@ html, body {
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
     border-radius: 100%; /*TO MAKE A CIRCLE FAM.*/
 }
-
 .section {
 	width: 50%;
 	margin: 100px auto;
 	position: absolute;
 }
-#face{ 
-	position: fixed; /* IT IS VERY IMPORTANT THIS FALLS UNDER .section's position declaration in the code*/
-	left: 0;}
-#face img{
-	width: 85%;
-    border-radius: 100%;
-    max-width: 300px;
-}
 #text{
-	left: 47%;
+	right:0%;
 	text-align: left;
-	background-color: rgba(150,225,255,.5);
+}
+.about{
+	background-color: rgb(150,225,255);
+	background-color: rgba(150,225,255,.75);
+}
+.contact{
+	background-color: rgb(255,150,200);
+	background-color: rgba(255,150,200,.75);
+}
+.lessons{
+	background-color: rgb(200,255,150);
+	background-color: rgba(200,255,150,.75);
 }
 p {
-	padding: 10px 20px;
+	padding: 0px 20px;
 }
-
+#face{ 
+	position: fixed;
+	left: 0;
+}
+#face img{
+	width: 85%;
+    max-width: 300px;
+    border-radius: 100%;
+}
+#card{
+	position: fixed;
+	left: 0;
+}
+#card img{
+	width: 85%;
+    max-width: 300px;
+    border: none;
+}
+ul li {
+	font-size: 20px;
+	line-height: 80px;
+	list-style-type: none;
+}
+li img {
+	margin-right: 20px;
+	vertical-align: middle;
+}
 /* Below sets different parameters for when the width of the browser is LESS than 600px*/
-@media (max-width: 600px) {
+@media (orientation:portrait), (max-width: 600px) {
 	#wrap {
 		width: 100%;
 	}
 	.shape{ /*Not sure why but a verticle margin in #wrap wouldn't work, see above, keep in .shape class */
-		margin: 75px auto;
+		margin: 100px auto;
 		width: 100%;
 		position: static; /*this returns the position of the elements to the html structure (circle first)*/
-
 	}
 	.section {
-		margin: 75px auto;
+		margin: 100px auto;
 		width: 80%;
 		position: static;
 	}
 	#face {
 		max-width: 200px;
 		position: static;
+	}
+	#card {
+		max-width: 200px;
+		position: static;
+	}
+	p {
+		padding: 10px 10px;
 	}
 }
