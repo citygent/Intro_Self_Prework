@@ -1,5 +1,7 @@
 sublime2 plugins: Package Control, Advanced new file, sublime linter, git,
 keyboard shortcuts: close window (⌘W), swtich tab(ctrltab), select line from caret(⌘shift+left/right)
+Coding after work, past 11pm, is not productive. 
+Coding dreams are wierd.
 
 you can @import CSS style sheets.
 ../ means up-one in the file structure
@@ -11,16 +13,32 @@ table-inline
 you can clip mask images into circles using css, other shapes more tricky.
 People disagree on when to use id and class selectors
 The C in CSS is quite important.
-Floats and parents are confusing.
+Floats and Overflow is confusing.
 Git is useful. Learned init, add, commit, and push, but need practice.
 !! sudo is super useful for long terminal commands you fuck up.
 GitHub and Knowledeable Friends are the best <3
 flexbox looks cool but isnt that supported maybe, also position did what i wanted after a bit of understanding.
-
+I need to study parent/sibling/child relationships.
+I need better understanding of position: relative.
+Aint nobody got time for floats. 
+Close container divs or it's pointless having them!
+Border: solid colour is useful for layout diagnostics.
+Orientation: portrait in MediaQ's for phones with retina displays?
+You can have -or- in media q's, just seperate rules with comma. Need to do further research on syntax etc. 
+Developing for phones is hard because inspect-element doesnt't exist. Chome and Safari don't display the same. 
+text-decoration: none; takes away underline
+list-style-type: none; takes away bullet points
+vertical-align: is useful for making thigns more typographically pretty.
 
 
 
 Things you mgiht want to do if time:
-	CSS clip the triangle image
-	if above successful, add rollover highlights to shapes?
 	
+	CSS clip the triangle image on index.html
+		If above successful, add rollover/hover highlights to shapes? if not then maybe rollover image change on shapes? 
+
+	Navbar at the top of about.html, contact.html, learnt.html
+
+	Verticle centering (LOLOLOLOLOLOL)
+
+	Make it look nicer on a phone (LOLOLOLOLOLOLOLOLOLOL)
