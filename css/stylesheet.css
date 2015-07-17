@@ -42,12 +42,12 @@ a {
 .shape{
 	width: 33.3%; /* this is coupled with shape img tag to center images in centered divs */
 	position: absolute; /* this coupled with left: # in divIDs is what changes the order of the shape divs for big screens*/
+	margin: 200px auto;
 }
 .shape img{
 	max-width: 100%; /*to contain image to .shape div ISSUE: duplicate max-widths :/ */
 	max-height: 100%; /*to contain image to .shape div */
 	max-width: 250px; /* this was in .shape but ruined centering of divs ISSUE: duplicate max-widths :/ */
-	margin: 200px auto; /* this was in .shape but ruined centering of divs*/
 }
 #circle{
 	left: 33.3%; /* or 40% See below*/
