@@ -62,6 +62,7 @@ a {
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
     border-radius: 100%; /*TO MAKE A CIRCLE FAM.*/
 }
+/*===========================END OF HOMEPAGE STYLING===========================*/
 .section {
 	width: 50%;
 	margin: 100px auto;
@@ -70,6 +71,7 @@ a {
 #text{
 	right:1%;
 	text-align: left;
+	padding-bottom: 15px;
 }
 .about{
 	background-color: rgb(150,225,255);
