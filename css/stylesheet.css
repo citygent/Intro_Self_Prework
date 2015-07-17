@@ -34,29 +34,29 @@ a {
 /*===========================END OF NAVBAR STYLING===========================*/
 #wrap{
 	height: 100%; /* this and above for floats, but fuck floats seriously */
+	width: 100%;
   	margin: 0 auto; /*keeps things centered as screen grows above 1200px*/
  	max-width: 1080px;
  	position: relative;
 }
 .shape{
-	width: 33.3%; 
-	height: 33.3%; 
-	max-width: 250px;/* issue with chrome browser on phone, still not fixed but better, assume img tag problem */
-	margin: 200px auto; /* needs to be in .shape for media query to work see mediaQ comments*/
+	width: 33.3%; /* this is coupled with shape img tag to center images in centered divs */
 	position: absolute; /* this coupled with left: # in divIDs is what changes the order of the shape divs for big screens*/
 }
 .shape img{
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 100%; /*to contain image to .shape div ISSUE: duplicate max-widths :/ */
+	max-height: 100%; /*to contain image to .shape div */
+	max-width: 250px; /* this was in .shape but ruined centering of divs ISSUE: duplicate max-widths :/ */
+	margin: 200px auto; /* this was in .shape but ruined centering of divs*/
 }
 #circle{
-	left: 33%;
+	left: 33.3%; /* or 40% See below*/
 }
 #square{
-	left: 1%;
+	left: 0%; /* or 5% Ideally these would be 33% and 0% respectively but they aren't totally centered in wrap div and I don't know why*/
 }
 #triangle{
-	left: 66%;
+	left: 66.6%; /* 70 */
 }
 #circle img{
     /*border: 0px solid rgba(150,200,255,1); NOT NEEDED*/
@@ -132,11 +132,11 @@ h1 {
 /* Below sets different parameters for when the width of the browser is:
 LESS than 600px --or-- the device orientation is portrait (phones). 
 There is an issue with Chrome and image distortion, might be to do with .shape img % */
-@media (max-width: 600px), (orientation:portrait) {
+@media (max-width: 800px), (orientation:portrait) {
 	/*#wrap {
 		width: 100%;
 	}*/
-	.shape{ /*Not sure why but a verticle margin in #wrap wouldn't work, see above, keep in .shape class */
+	.shape{ /* Potentially no longer relevant/better understanding: Not sure why but a verticle margin in #wrap wouldn't work, see above, keep in .shape class */
 		margin: 100px auto;
 		width: 100%;
 		height: auto;
