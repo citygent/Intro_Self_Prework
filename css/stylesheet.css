@@ -47,7 +47,7 @@ a {
 .shape img{
 	max-width: 100%; /*to contain image to .shape div ISSUE: duplicate max-widths :/ */
 	max-height: 100%; /*to contain image to .shape div */
-	max-width: 250px; /* this was in .shape but ruined centering of divs ISSUE: duplicate max-widths :/ */
+	width: 250px; /* this was in .shape but ruined centering of divs ISSUE: duplicate max-widths :/ */
 }
 #circle{
 	left: 33.3%; /* or 40% See below*/
@@ -64,7 +64,7 @@ a {
 }
 /*===========================END OF HOMEPAGE STYLING===========================*/
 .section {
-	width: 50%;
+	width: 55%; /*bigscreen sizing woes are coming from the decision to fix the shape position and also reusing .section code?*/
 	margin: 100px auto;
 	position: absolute;
 }
@@ -113,6 +113,9 @@ p {
 #code{ 
 	position: fixed;
 	left: 0;
+}
+.about p{
+	line-height: 20px;
 }
 .contact ul li {
 	font-size: 20px;
